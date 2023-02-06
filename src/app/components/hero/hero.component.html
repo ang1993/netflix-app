@@ -1,0 +1,11 @@
+<section class="top10-group">
+    <h3 class="category-title">Las series más vistas en España hoy</h3>
+    <ul>
+        <li *ngFor="let film of topSeries.titles">
+            <div class="top10-item">
+                <span>{{film.number}}</span>
+                <img src="{{film.image.src}}" alt="{{film.image.alt}}">
+            </div>
+        </li>
+    </ul>
+</section>

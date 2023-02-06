@@ -1,0 +1,13 @@
+ 
+    <section class="category-film-group">
+        <h3 class="category-title">{{filmGallery.category}}</h3>
+            <ul class="film-list">
+                <li *ngFor="let film of filmGallery.filmInfo">
+                    <img src="{{film.image.src}}" alt="{{film.image.alt}}">
+                    <div class="specifications">
+                    <h4>{{film.title}}</h4>
+                    <p>Duración: {{film.minutes}} min</p>
+                    </div>
+                </li>
+            </ul>
+    </section>
