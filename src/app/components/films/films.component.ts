@@ -8,11 +8,11 @@ import { contentFilms } from './../../models/film-interface';
 })
 export class FilmsComponent {
 
-  @Input() dramaFilms: contentFilms = {category: '', filmInfo:[]};
-  @Input() terrorFilms: contentFilms = {category: '', filmInfo:[]};
-  @Input() comediaFilms: contentFilms = {category: '', filmInfo:[]};
-  @Input() sciFi: contentFilms = {category: '', filmInfo:[]};
-  @Input() filmGallery: any;
+  @Input() public dramaFilms: contentFilms = {category: '', filmInfo:[]};
+  @Input() public terrorFilms: contentFilms = {category: '', filmInfo:[]};
+  @Input() public comediaFilms: contentFilms = {category: '', filmInfo:[]};
+  @Input() public sciFi: contentFilms = {category: '', filmInfo:[]};
+  @Input() public filmGallery!: contentFilms;
    
   }
 
